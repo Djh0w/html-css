@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+ hTML id = # CSS (Only elements). Only in document. Several in different documents.
+ class HTML = . CSS (several elements). 
+*/
+
+body{
+    background-color: rgb(204, 248, 221);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(63, 172, 148);
+}
+
+#main{
+    text-align: center;
+    background-color: rgb(63, 172, 148);
+    color: white;
+}
+
+h2{
+    color: rgb(39, 66, 57);
+}
+
+.basic {
+    color: tomato;
+    font-weight: bold;
+}
+
+.intermediate{
+    color: yellowgreen;
+}
+
+.advanced{
+    color: violet;
+}
+
+.highlight{
+    background-color: #dada6052;
+}
