@@ -8,15 +8,25 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /*shorthand - background
+                color > image > position > repeat > [size] > attachment
+                Somente quando troca a ordem funciona:
+                color > image > position > / [size] > repeat > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
+           
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +38,9 @@
 <body>
     <main>
         <h1>Background Image Test</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos veritatis voluptatibus hic, iste inventore amet veniam quas mollitia voluptatem eligendi corporis neque ipsum. Magnam, aspernatur? Tempora dolor error temporibus non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem cupiditate eum aliquid ex nostrum, ratione perferendis! Fugiat atque et fugit molestiae quibusdam officia excepturi voluptatem minima, minus dignissimos temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi sed dolore? Labore cum rem, dolorem adipisci perspiciatis corporis magni nulla ad sit, consequuntur odio harum nobis? Mollitia, deserunt nesciunt.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos veritatis voluptatibus hic, iste inventore amet veniam quas mollitia voluptatem eligendi corporis neque ipsum. Magnam, aspernatur? Tempora dolor error temporibus non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem cupiditate eum aliquid ex nostrum, ratione perferendis! Fugiat atque et fugit molestiae quibusdam officia excepturi voluptatem minima, minus dignissimos temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi sed dolore? Labore cum rem, dolorem adipisci perspiciatis corporis magni nulla ad sit, consequuntur odio harum nobis? Mollitia, deserunt nesciunt.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos veritatis voluptatibus hic, iste inventore amet veniam quas mollitia voluptatem eligendi corporis neque ipsum. Magnam, aspernatur? Tempora dolor error temporibus non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem cupiditate eum aliquid ex nostrum, ratione perferendis! Fugiat atque et fugit molestiae quibusdam officia excepturi voluptatem minima, minus dignissimos temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi sed dolore? Labore cum rem, dolorem adipisci perspiciatis corporis magni nulla ad sit, consequuntur odio harum nobis? Mollitia, deserunt nesciunt.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos veritatis voluptatibus hic, iste inventore amet veniam quas mollitia voluptatem eligendi corporis neque ipsum. Magnam, aspernatur? Tempora dolor error temporibus non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem cupiditate eum aliquid ex nostrum, ratione perferendis! Fugiat atque et fugit molestiae quibusdam officia excepturi voluptatem minima, minus dignissimos temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi sed dolore? Labore cum rem, dolorem adipisci perspiciatis corporis magni nulla ad sit, consequuntur odio harum nobis? Mollitia, deserunt nesciunt.</p>
     </main>
 </body>
