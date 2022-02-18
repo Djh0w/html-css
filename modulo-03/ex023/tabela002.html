@@ -14,7 +14,9 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*Para fixar nome da coluna*/
         }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -31,6 +33,22 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+            
+        }
+
+        thead > tr > th { /*Para fixar nome da coluna*/
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /*PSEUDO CLASSE PARA ZEBRAR TABELA
+            2n - ZEBRAR
+            odd - IMPAR (2n - 1)
+            even - PAR (2n)
+            */
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td.num {
