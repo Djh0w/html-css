@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 03</title>
+</head>
+<body>
+    <h1>Exemplo de formulário 03</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <!--Input tipo cor
+                value: valor que começa-->
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <!--Input para barra de satisfação
+                min: valor menor
+                max: valor maximo
+                value: qual valor começa-->
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="1">
+        </p>
+
+        <p>
+            <!--input para envio de arquivos
+                Quando for arquivo o method NÃO PODE SER GET-->
+            <label for="ifoto">Foto de Perfil</label><br>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
